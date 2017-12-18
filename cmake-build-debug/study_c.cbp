@@ -17,26 +17,6 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="install/strip">
-				<Option working_dir="/home/alright/dev/c++/study_c/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="install/local">
-				<Option working_dir="/home/alright/dev/c++/study_c/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="install">
 				<Option working_dir="/home/alright/dev/c++/study_c/cmake-build-debug"/>
 				<Option type="4"/>
@@ -122,6 +102,76 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 study_c/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/alright/dev/c++/study_c/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/alright/dev/c++/study_c/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CapitalsCountries">
+				<Option output="/home/alright/dev/c++/study_c/cmake-build-debug/CapitalsCountries" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alright/dev/c++/study_c/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/alright/dev/c++/study_c/lib/googletest/googletest/include"/>
+					<Add directory="/home/alright/dev/c++/study_c/Tests"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 CapitalsCountries"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CapitalsCountries/fast">
+				<Option output="/home/alright/dev/c++/study_c/cmake-build-debug/CapitalsCountries" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alright/dev/c++/study_c/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/alright/dev/c++/study_c/lib/googletest/googletest/include"/>
+					<Add directory="/home/alright/dev/c++/study_c/Tests"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 CapitalsCountries/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alright/dev/c++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -336,6 +386,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/alright/dev/c++/study_c/Tests/CapitalsCountries.cc">
+			<Option target="CapitalsCountries"/>
+		</Unit>
 		<Unit filename="/home/alright/dev/c++/study_c/lib/googletest/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
@@ -356,6 +409,9 @@
 		</Unit>
 		<Unit filename="/home/alright/dev/c++/study_c/src">
 			<Option target="study_c"/>
+		</Unit>
+		<Unit filename="/home/alright/dev/c++/study_c/src/headers/CapitalsCountries.h">
+			<Option target="CapitalsCountries"/>
 		</Unit>
 		<Unit filename="/home/alright/dev/c++/study_c/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
