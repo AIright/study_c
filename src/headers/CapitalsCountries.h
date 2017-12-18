@@ -42,7 +42,21 @@
 
 using namespace std;
 
+void CHANGE_CAPITAL(const string& country, const string& new_capital) {
 
+}
+
+void RENAME(const string& old_country_name, const string& new_country_name) {
+
+}
+
+void ABOUT(const string& country) {
+
+}
+
+void DUMP(const map<string, string>& countries) {
+
+}
 
 
 #endif //STUDY_C_CAPITALSCOUNTRIES_H

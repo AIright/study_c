@@ -7,6 +7,18 @@
 #include "../src/headers/CapitalsCountries.h"
 using namespace std;
 
-TEST(Anagram, BasicTests) {
+TEST(CapitalsCountries, CHANGE_CAPITAL_TEST) {
+
+}
+
+TEST(CapitalsCountries, DUMP_TEST) {
+
+}
+
+TEST(CapitalsCountries, ABOUT_TEST) {
+
+}
+
+TEST(CapitalsCountries, RENAME_TEST) {
 
 }
