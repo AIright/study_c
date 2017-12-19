@@ -11,6 +11,10 @@ iostream
 -
 vector
 -
+string
+-
 map
+-
+algorithm
 -
 

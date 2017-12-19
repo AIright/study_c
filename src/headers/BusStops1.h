@@ -1,3 +1,10 @@
+//
+// Created by alright on 19.12.17.
+//
+
+#ifndef STUDY_C_BUSSTOPS1_H
+#define STUDY_C_BUSSTOPS1_H
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -59,10 +66,10 @@ void BUSES_FOR_STOP(map<string, vector<string>>& routes, const vector<string> bu
  * вместо списка автобусов для неё выведите no interchange.
  * Если маршрут bus не существует, выведите No bus.
  */
-void STOPS_FOR_BUS(map<string, vector<string>>& routes, const vector<string> buses) {
+void STOP_FOR_BUS(map<string, vector<string>>& routes, const vector<string> buses) {
     string bus;
     cin >> bus;
-    if (routes.count(bus) == 0) {
+    if (!routes.count(bus)) {
         cout << "No bus" << endl;
     } else {
         vector<string>::iterator it;
@@ -108,7 +115,7 @@ void ALL_BUSES(map<string, vector<string>>& routes) {
     }
 }
 
-int main() {
+int BusStops1_main() {
     int tries;
     string param1;
     vector<string> buses;
@@ -119,8 +126,8 @@ int main() {
         if (param1 == "ALL_BUSES") {
             ALL_BUSES(routes);
         }
-        else if (param1 == "STOPS_FOR_BUS") {
-            STOPS_FOR_BUS(routes, buses);
+        else if (param1 == "STOP_FOR_BUS") {
+            STOP_FOR_BUS(routes, buses);
         }
         else if (param1 == "BUSES_FOR_STOP") {
             BUSES_FOR_STOP(routes, buses);
@@ -131,3 +138,5 @@ int main() {
     }
     return 0;
 };
+
+#endif //STUDY_C_BUSSTOPS1_H
