@@ -41,9 +41,6 @@ void BUSES_FOR_STOP(map<string, vector<string>>& routes, const vector<string> bu
     for (const auto& bus : buses) {
         it = find(routes[bus].begin(), routes[bus].end(), stop);
         if (it != routes[bus].end()) {
-            if (check == 0) {
-                cout << "Stop " << stop << ": ";
-            }
             cout << bus << " ";
             check++;
         }
@@ -66,21 +63,22 @@ void BUSES_FOR_STOP(map<string, vector<string>>& routes, const vector<string> bu
  * вместо списка автобусов для неё выведите no interchange.
  * Если маршрут bus не существует, выведите No bus.
  */
-void STOP_FOR_BUS(map<string, vector<string>>& routes, const vector<string> buses) {
+void STOPS_FOR_BUS(map<string, vector<string>>& routes, const vector<string> buses) {
     string bus;
     cin >> bus;
-    if (!routes.count(bus)) {
+    if (routes.count(bus) == 0) {
         cout << "No bus" << endl;
     } else {
         vector<string>::iterator it;
         int check = 0;
         for (const auto& stop : routes[bus]) {
+            check = 0;
             cout << "Stop " << stop << ": ";
             for (const auto& b : buses) {
                 if (b != bus) {
-                    it = find(routes[bus].begin(), routes[bus].end(), stop);
-                    if (it != routes[bus].end()) {
-                        cout << bus << " ";
+                    it = find(routes[b].begin(), routes[b].end(), stop);
+                    if (it != routes[b].end()) {
+                        cout << b << " ";
                         check++;
                     }
                 }
@@ -115,7 +113,7 @@ void ALL_BUSES(map<string, vector<string>>& routes) {
     }
 }
 
-int BusStops1_main() {
+int BusStors1_main() {
     int tries;
     string param1;
     vector<string> buses;
@@ -126,8 +124,8 @@ int BusStops1_main() {
         if (param1 == "ALL_BUSES") {
             ALL_BUSES(routes);
         }
-        else if (param1 == "STOP_FOR_BUS") {
-            STOP_FOR_BUS(routes, buses);
+        else if (param1 == "STOPS_FOR_BUS") {
+            STOPS_FOR_BUS(routes, buses);
         }
         else if (param1 == "BUSES_FOR_STOP") {
             BUSES_FOR_STOP(routes, buses);
@@ -140,3 +138,118 @@ int BusStops1_main() {
 };
 
 #endif //STUDY_C_BUSSTOPS1_H
+
+/* The answer
+#include <iostream>
+#include <string>
+#include <map>
+#include <vector>
+
+using namespace std;
+
+// ответ на запрос BUSES_FOR_STOP
+void PrintBusesForStop(map<string, vector<string>>& stops_to_buses,
+                       const string& stop) {
+  if (stops_to_buses.count(stop) == 0) {
+    cout << "No stop" << endl;
+  } else {
+    for (const string& bus : stops_to_buses[stop]) {
+      cout << bus << " ";
+    }
+    cout << endl;
+  }
+}
+
+// ответ на запрос STOPS_FOR_BUS
+void PrintStopsForBus(map<string, vector<string>>& buses_to_stops,
+                      map<string, vector<string>>& stops_to_buses,
+                      const string& bus) {
+  if (buses_to_stops.count(bus) == 0) {
+    cout << "No bus" << endl;
+  } else {
+    for (const string& stop : buses_to_stops[bus]) {
+      cout << "Stop " << stop << ": ";
+
+      // если через остановку проходит ровно один автобус,
+      // то это наш автобус bus, следовательно, пересадки тут нет
+      if (stops_to_buses[stop].size() == 1) {
+        cout << "no interchange";
+      } else {
+        for (const string& other_bus : stops_to_buses[stop]) {
+          if (bus != other_bus) {
+            cout << other_bus << " ";
+          }
+        }
+      }
+      cout << endl;
+    }
+  }
+}
+
+// ответ на запрос ALL_BUSES
+void PrintAllBuses(const map<string, vector<string>>& buses_to_stops) {
+  if (buses_to_stops.empty()) {
+    cout << "No buses" << endl;
+  } else {
+    for (const auto& bus_item : buses_to_stops) {
+      cout << "Bus " << bus_item.first << ": ";
+      for (const string& stop : bus_item.second) {
+        cout << stop << " ";
+      }
+      cout << endl;
+    }
+  }
+}
+
+int main() {
+  int q;
+  cin >> q;
+
+  map<string, vector<string>> buses_to_stops, stops_to_buses;
+
+  for (int i = 0; i < q; ++i) {
+    string operation_code;
+    cin >> operation_code;
+
+    if (operation_code == "NEW_BUS") {
+
+      string bus;
+      cin >> bus;
+      int stop_count;
+      cin >> stop_count;
+
+      // с помощью ссылки дадим короткое название вектору
+      // со списком остановок данного автобуса;
+      // ключ bus изначально отсутствовал в словаре, поэтому он автоматически
+      // добавится туда с пустым вектором в качестве значения
+      vector<string>& stops = buses_to_stops[bus];
+      stops.resize(stop_count);
+
+      for (string& stop : stops) {
+        cin >> stop;
+        // не забудем обновить словарь stops_to_buses
+        stops_to_buses[stop].push_back(bus);
+      }
+
+    } else if (operation_code == "BUSES_FOR_STOP") {
+
+      string stop;
+      cin >> stop;
+      PrintBusesForStop(stops_to_buses, stop);
+
+    } else if (operation_code == "STOPS_FOR_BUS") {
+
+      string bus;
+      cin >> bus;
+      PrintStopsForBus(buses_to_stops, stops_to_buses, bus);
+
+    } else if (operation_code == "ALL_BUSES") {
+
+      PrintAllBuses(buses_to_stops);
+
+    }
+  }
+
+  return 0;
+}
+ */
