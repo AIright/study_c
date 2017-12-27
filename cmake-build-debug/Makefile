@@ -234,33 +234,6 @@ gtest/fast:
 	$(MAKE) -f lib/googletest/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest/googlemock/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
-Tests/CapitalsCountries.o: Tests/CapitalsCountries.cc.o
-
-.PHONY : Tests/CapitalsCountries.o
-
-# target to build an object file
-Tests/CapitalsCountries.cc.o:
-	$(MAKE) -f CMakeFiles/CapitalsCountries.dir/build.make CMakeFiles/CapitalsCountries.dir/Tests/CapitalsCountries.cc.o
-.PHONY : Tests/CapitalsCountries.cc.o
-
-Tests/CapitalsCountries.i: Tests/CapitalsCountries.cc.i
-
-.PHONY : Tests/CapitalsCountries.i
-
-# target to preprocess a source file
-Tests/CapitalsCountries.cc.i:
-	$(MAKE) -f CMakeFiles/CapitalsCountries.dir/build.make CMakeFiles/CapitalsCountries.dir/Tests/CapitalsCountries.cc.i
-.PHONY : Tests/CapitalsCountries.cc.i
-
-Tests/CapitalsCountries.s: Tests/CapitalsCountries.cc.s
-
-.PHONY : Tests/CapitalsCountries.s
-
-# target to generate assembly for a file
-Tests/CapitalsCountries.cc.s:
-	$(MAKE) -f CMakeFiles/CapitalsCountries.dir/build.make CMakeFiles/CapitalsCountries.dir/Tests/CapitalsCountries.cc.s
-.PHONY : Tests/CapitalsCountries.cc.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -306,9 +279,6 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... Tests/CapitalsCountries.o"
-	@echo "... Tests/CapitalsCountries.i"
-	@echo "... Tests/CapitalsCountries.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

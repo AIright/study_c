@@ -386,9 +386,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/alright/dev/c++/study_c/Tests/CapitalsCountries.cc">
-			<Option target="CapitalsCountries"/>
-		</Unit>
 		<Unit filename="/home/alright/dev/c++/study_c/lib/googletest/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
@@ -409,9 +406,6 @@
 		</Unit>
 		<Unit filename="/home/alright/dev/c++/study_c/src">
 			<Option target="study_c"/>
-		</Unit>
-		<Unit filename="/home/alright/dev/c++/study_c/src/headers/CapitalsCountries.h">
-			<Option target="CapitalsCountries"/>
 		</Unit>
 		<Unit filename="/home/alright/dev/c++/study_c/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

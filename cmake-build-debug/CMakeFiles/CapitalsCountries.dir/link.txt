@@ -1,1 +1,1 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/CapitalsCountries.dir/Tests/CapitalsCountries.cc.o  -o CapitalsCountries lib/googletest/googlemock/gtest/libgtest_maind.a lib/googletest/googlemock/gtest/libgtestd.a -pthread 
+/usr/bin/c++  -g  -rdynamic   -o CapitalsCountries lib/googletest/googlemock/gtest/libgtest_maind.a lib/googletest/googlemock/gtest/libgtestd.a -pthread 

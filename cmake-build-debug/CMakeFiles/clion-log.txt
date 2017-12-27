@@ -1,4 +1,16 @@
 /home/alright/Downloads/clion-2017.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/alright/dev/c++/study_c
 -- Configuring done
+CMake Error at lib/googletest/googletest/cmake/internal_utils.cmake:185 (add_executable):
+  Cannot find source file:
+
+    Tests/CapitalsCountries.cc
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
+  .hxx .in .txx
+Call Stack (most recent call first):
+  lib/googletest/googletest/cmake/internal_utils.cmake:213 (cxx_executable_with_flags)
+  CMakeLists.txt:35 (cxx_executable)
+
+
 -- Generating done
 -- Build files have been written to: /home/alright/dev/c++/study_c/cmake-build-debug

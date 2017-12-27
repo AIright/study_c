@@ -23,26 +23,4 @@ cmath
 -
 locale
 -
-src/headers/NamesAndSurenames.h
-/home/alright/dev/c++/study_c/src/headers/NamesAndSurenames.h
-
-/home/alright/dev/c++/study_c/src/headers/NamesAndSurenames.h
-string
--
-algorithm
--
-iostream
--
-locale
--
-vector
--
-map
--
-iterator
--
-sstream
--
-string
--
 
