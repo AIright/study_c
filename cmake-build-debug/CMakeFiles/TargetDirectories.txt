@@ -1,11 +1,10 @@
+/home/alright/dev/c++/study_c/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/alright/dev/c++/study_c/cmake-build-debug/CMakeFiles/install/local.dir
 /home/alright/dev/c++/study_c/cmake-build-debug/CMakeFiles/install.dir
 /home/alright/dev/c++/study_c/cmake-build-debug/CMakeFiles/list_install_components.dir
 /home/alright/dev/c++/study_c/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/alright/dev/c++/study_c/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/alright/dev/c++/study_c/cmake-build-debug/CMakeFiles/study_c.dir
-/home/alright/dev/c++/study_c/cmake-build-debug/CMakeFiles/install/strip.dir
-/home/alright/dev/c++/study_c/cmake-build-debug/CMakeFiles/install/local.dir
-/home/alright/dev/c++/study_c/cmake-build-debug/CMakeFiles/CapitalsCountries.dir
 /home/alright/dev/c++/study_c/cmake-build-debug/lib/googletest/CMakeFiles/install/strip.dir
 /home/alright/dev/c++/study_c/cmake-build-debug/lib/googletest/CMakeFiles/install/local.dir
 /home/alright/dev/c++/study_c/cmake-build-debug/lib/googletest/CMakeFiles/install.dir

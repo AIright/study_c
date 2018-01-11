@@ -32,8 +32,8 @@ include_directories(lib/googletest/googletest/include Tests)
 #        src/headers/Reverse.h)
 #cxx_executable(Anagram Tests gtest_main
 #        src/headers/Anagram.h)
-cxx_executable(CapitalsCountries Tests gtest_main
-        src/headers/CapitalsCountries.h)
+#cxx_executable(CapitalsCountries Tests gtest_main
+#        src/headers/CapitalsCountries.h)
 
 
 set(SOURCE_FILES src/headers/)
