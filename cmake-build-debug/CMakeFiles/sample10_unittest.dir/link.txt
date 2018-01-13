@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic   -o sample10_unittest lib/googletest/googlemock/gtest/libgtestd.a -pthread 

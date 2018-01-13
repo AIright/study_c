@@ -1,3 +1,4 @@
+ToolSet: w64 5.0@C:\Dev\mingw-w64\mingw64
 Options: 
 
 Options:

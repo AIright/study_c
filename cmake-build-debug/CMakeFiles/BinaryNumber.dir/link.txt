@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/BinaryNumber.dir/Tests/BinaryNumber.cc.o  -o BinaryNumber lib/googletest/googlemock/gtest/libgtest_maind.a lib/googletest/googlemock/gtest/libgtestd.a -pthread 

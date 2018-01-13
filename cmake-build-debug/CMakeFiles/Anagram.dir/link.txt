@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/Anagram.dir/Tests/Anagram.cc.o  -o Anagram lib/googletest/googlemock/gtest/libgtest_maind.a lib/googletest/googlemock/gtest/libgtestd.a -pthread 

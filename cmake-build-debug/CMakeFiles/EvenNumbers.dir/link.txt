@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/EvenNumbers.dir/Tests/EvenNumbers.cc.o  -o EvenNumbers lib/googletest/googlemock/gtest/libgtest_maind.a lib/googletest/googlemock/gtest/libgtestd.a -pthread 

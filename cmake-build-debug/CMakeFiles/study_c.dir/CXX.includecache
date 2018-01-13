@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/alright/dev/c++/study_c/main.cpp
+C:/Dev/ProjectsC++/study_c/main.cpp
 iostream
 -
 sstream
