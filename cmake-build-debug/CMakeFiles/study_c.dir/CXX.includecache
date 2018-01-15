@@ -9,12 +9,18 @@
 C:/Dev/ProjectsC++/study_c/main.cpp
 iostream
 -
-sstream
+iomanip
+-
+algorithm
+-
+string
 -
 map
 -
 set
 -
 vector
+-
+sstream
 -
 
