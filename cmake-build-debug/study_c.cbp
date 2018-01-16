@@ -17,6 +17,52 @@
 					<DistClean command="C:/Dev/mingw-w64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/ProjectsC++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="FinalTaskTesting">
+				<Option output="C:/Dev/ProjectsC++/study_c/cmake-build-debug/FinalTaskTesting.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Dev/ProjectsC++/study_c/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Dev/ProjectsC++/study_c/lib/googletest/googletest/include"/>
+					<Add directory="C:/Dev/ProjectsC++/study_c/Tests"/>
+					<Add directory="C:/Dev/mingw-w64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.2.0/include/c++"/>
+					<Add directory="C:/Dev/mingw-w64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Dev/mingw-w64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.2.0/include/c++/backward"/>
+					<Add directory="C:/Dev/mingw-w64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.2.0/include"/>
+					<Add directory="C:/Dev/mingw-w64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.2.0/include-fixed"/>
+					<Add directory="C:/Dev/mingw-w64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Dev/mingw-w64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/ProjectsC++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 FinalTaskTesting"/>
+					<CompileFile command="C:/Dev/mingw-w64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/ProjectsC++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Dev/mingw-w64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/ProjectsC++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Dev/mingw-w64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/ProjectsC++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FinalTaskTesting/fast">
+				<Option output="C:/Dev/ProjectsC++/study_c/cmake-build-debug/FinalTaskTesting.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Dev/ProjectsC++/study_c/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Dev/ProjectsC++/study_c/lib/googletest/googletest/include"/>
+					<Add directory="C:/Dev/ProjectsC++/study_c/Tests"/>
+					<Add directory="C:/Dev/mingw-w64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.2.0/include/c++"/>
+					<Add directory="C:/Dev/mingw-w64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Dev/mingw-w64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.2.0/include/c++/backward"/>
+					<Add directory="C:/Dev/mingw-w64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.2.0/include"/>
+					<Add directory="C:/Dev/mingw-w64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.2.0/include-fixed"/>
+					<Add directory="C:/Dev/mingw-w64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Dev/mingw-w64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/ProjectsC++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 FinalTaskTesting/fast"/>
+					<CompileFile command="C:/Dev/mingw-w64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/ProjectsC++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Dev/mingw-w64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/ProjectsC++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Dev/mingw-w64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/ProjectsC++/study_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="install/local">
 				<Option working_dir="C:/Dev/ProjectsC++/study_c/cmake-build-debug"/>
 				<Option type="4"/>
@@ -316,6 +362,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Dev/ProjectsC++/study_c/Tests/FinalTaskTesting.cc">
+			<Option target="FinalTaskTesting"/>
+		</Unit>
 		<Unit filename="C:/Dev/ProjectsC++/study_c/lib/googletest/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
@@ -336,6 +385,9 @@
 		</Unit>
 		<Unit filename="C:/Dev/ProjectsC++/study_c/src">
 			<Option target="study_c"/>
+		</Unit>
+		<Unit filename="C:/Dev/ProjectsC++/study_c/src/headers/FinalTask.h">
+			<Option target="FinalTaskTesting"/>
 		</Unit>
 		<Unit filename="C:/Dev/ProjectsC++/study_c/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

@@ -9,7 +9,7 @@
 
 using namespace std;
 // Реализуйте функции и методы классов и при необходимости добавьте свои
-
+/*
 class Date {
 public:
     Date() {
@@ -185,4 +185,9 @@ int main() {
         }
     }
     return 0;
-}
+};
+ */
+
+int main() {
+    return 0;
+};
