@@ -29,3 +29,4 @@ TEST(Positive, DatabasePrint) {
     string output = testing::internal::GetCapturedStdout();
     EXPECT_EQ("0000-01-01 event3\n0000-01-02 event1\n0000-01-02 event2\n", output);
 }
+

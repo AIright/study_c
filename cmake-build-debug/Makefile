@@ -156,19 +156,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named FinalTaskTesting
-
-# Build rule for target.
-FinalTaskTesting: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 FinalTaskTesting
-.PHONY : FinalTaskTesting
-
-# fast build rule for target.
-FinalTaskTesting/fast:
-	$(MAKE) -f CMakeFiles\FinalTaskTesting.dir\build.make CMakeFiles/FinalTaskTesting.dir/build
-.PHONY : FinalTaskTesting/fast
-
-#=============================================================================
 # Target rules for targets named study_c
 
 # Build rule for target.
@@ -233,33 +220,6 @@ gtest_main/fast:
 	$(MAKE) -f lib\googletest\googlemock\gtest\CMakeFiles\gtest_main.dir\build.make lib/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-Tests/FinalTaskTesting.obj: Tests/FinalTaskTesting.cc.obj
-
-.PHONY : Tests/FinalTaskTesting.obj
-
-# target to build an object file
-Tests/FinalTaskTesting.cc.obj:
-	$(MAKE) -f CMakeFiles\FinalTaskTesting.dir\build.make CMakeFiles/FinalTaskTesting.dir/Tests/FinalTaskTesting.cc.obj
-.PHONY : Tests/FinalTaskTesting.cc.obj
-
-Tests/FinalTaskTesting.i: Tests/FinalTaskTesting.cc.i
-
-.PHONY : Tests/FinalTaskTesting.i
-
-# target to preprocess a source file
-Tests/FinalTaskTesting.cc.i:
-	$(MAKE) -f CMakeFiles\FinalTaskTesting.dir\build.make CMakeFiles/FinalTaskTesting.dir/Tests/FinalTaskTesting.cc.i
-.PHONY : Tests/FinalTaskTesting.cc.i
-
-Tests/FinalTaskTesting.s: Tests/FinalTaskTesting.cc.s
-
-.PHONY : Tests/FinalTaskTesting.s
-
-# target to generate assembly for a file
-Tests/FinalTaskTesting.cc.s:
-	$(MAKE) -f CMakeFiles\FinalTaskTesting.dir\build.make CMakeFiles/FinalTaskTesting.dir/Tests/FinalTaskTesting.cc.s
-.PHONY : Tests/FinalTaskTesting.cc.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -293,7 +253,6 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... FinalTaskTesting
 	@echo ... install/local
 	@echo ... install
 	@echo ... edit_cache
@@ -305,9 +264,6 @@ help:
 	@echo ... gmock
 	@echo ... gtest
 	@echo ... gtest_main
-	@echo ... Tests/FinalTaskTesting.obj
-	@echo ... Tests/FinalTaskTesting.i
-	@echo ... Tests/FinalTaskTesting.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

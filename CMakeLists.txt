@@ -34,8 +34,8 @@ include_directories(lib/googletest/googletest/include Tests)
 #        src/headers/Anagram.h)
 #cxx_executable(CapitalsCountries Tests gtest_main
 #        src/headers/CapitalsCountries.h)
-cxx_executable(FinalTaskTesting Tests gtest_main
-        src/headers/FinalTask.h)
+#cxx_executable(FinalTaskTesting Tests gtest_main
+#        src/headers/FinalTask.h)
 
 
 set(SOURCE_FILES src/headers/)
