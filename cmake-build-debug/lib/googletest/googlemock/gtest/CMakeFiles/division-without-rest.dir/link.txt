@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic   -o division-without-rest libgtest_maind.a libgtestd.a -pthread 

@@ -1,0 +1,3 @@
+/home/alright/dev3/study_c/cmake-build-release/CMakeFiles/rebuild_cache.dir
+/home/alright/dev3/study_c/cmake-build-release/CMakeFiles/edit_cache.dir
+/home/alright/dev3/study_c/cmake-build-release/CMakeFiles/study_c.dir

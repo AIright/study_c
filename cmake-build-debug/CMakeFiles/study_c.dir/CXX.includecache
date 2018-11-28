@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Dev/ProjectsC++/study_c/main.cpp
+/home/alright/dev3/study_c/main.cpp
 iostream
 -
 iomanip

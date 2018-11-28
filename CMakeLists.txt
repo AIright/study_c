@@ -4,8 +4,8 @@ project(study_c)
 set(CMAKE_CXX_STANDARD 17)
 
 # Add googletest directiories
-add_subdirectory(lib/googletest)
-include_directories(lib/googletest/googletest/include Tests)
+#add_subdirectory(lib/googletest)
+#include_directories(lib/googletest/googletest/include Tests)
 
 # Run UnitTests
 #cxx_executable(DivisionWithoutRest Tests gtest_main
@@ -38,8 +38,9 @@ include_directories(lib/googletest/googletest/include Tests)
 #        src/headers/FinalTask.h)
 
 
-set(SOURCE_FILES src/headers/)
-add_executable(study_c ${SOURCE_FILES} main.cpp)
+#set(SOURCE_FILES src/headers/)
+set(SOURCE_FILES  main.cpp)
+add_executable(study_c ${SOURCE_FILES})
 
 
 

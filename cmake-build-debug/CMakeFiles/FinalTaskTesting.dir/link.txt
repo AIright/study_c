@@ -1,3 +1,0 @@
-"C:\Dev\CLion 2017.3.1\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\FinalTaskTesting.dir/objects.a
-C:\Dev\mingw-w64\mingw64\bin\ar.exe cr CMakeFiles\FinalTaskTesting.dir/objects.a @CMakeFiles\FinalTaskTesting.dir\objects1.rsp
-C:\Dev\mingw-w64\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\FinalTaskTesting.dir/objects.a -Wl,--no-whole-archive  -o FinalTaskTesting.exe -Wl,--out-implib,libFinalTaskTesting.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\FinalTaskTesting.dir\linklibs.rsp
