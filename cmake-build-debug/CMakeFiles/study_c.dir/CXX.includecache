@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/alright/dev3/study_c/main.cpp
+/Users/integr/CLionProjects/study_c/main.cpp
 iostream
 -
 iomanip
@@ -23,8 +23,8 @@ set
 -
 vector
 -
-sstream
--
 string
+-
+tuple
 -
 

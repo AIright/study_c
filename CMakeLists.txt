@@ -39,7 +39,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 
 #set(SOURCE_FILES src/headers/)
-set(SOURCE_FILES  main.cpp)
+set(SOURCE_FILES  main.cpp src/headers/TaskTracker.h src/headers/FindMaxRepetitionCount.h)
 add_executable(study_c ${SOURCE_FILES})
 
 

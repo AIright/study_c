@@ -1,15 +1,9 @@
-#include <iostream>
-#include <iomanip>
-#include <fstream>
-#include <algorithm>
-#include <string>
-#include <map>
-#include <set>
-#include <vector>
-#include <string>
-#include <tuple>
+//
+// Created by Integr on 05/12/2018.
+//
 
-using namespace std;
+#ifndef STUDY_C_TASKTRACKER_H
+#define STUDY_C_TASKTRACKER_H
 
 //Реализуйте класс TeamTasks, позволяющий хранить статистику по статусам задач команды разработчиков:
 //// Перечислимый тип для статуса задачи
@@ -124,8 +118,4 @@ using namespace std;
 //        В этой задаче вам надо прислать на проверку файл с реализацией класса TeamTasks. Этот файл не должен содержать определения типов TaskStatus и TasksInfo. В противном случае вы получите ошибку компиляции.
 //
 //Гарантируется, что типы TaskStatus и TasksInfo объявлены в точности так же, как в коде выше.
-
-int main() {
-    test();
-    return 0;
-};
+#endif //STUDY_C_TASKTRACKER_H
